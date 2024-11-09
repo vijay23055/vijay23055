@@ -15,7 +15,7 @@ const ExamResults = () => {
     setError(null);
 
     try {
-      const response = await axios.post('http://localhost:8000/user/student/results', { studentId });
+      const response = await axios.post('https://vijay23055-1.onrender.com/user/student/results', { studentId });
       setResults(response.data.results);
     } catch (err) {
       setError(err.response?.data?.message || 'An error occurred while fetching results');

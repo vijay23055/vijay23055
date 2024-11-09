@@ -29,7 +29,7 @@ function Signup() {
     }
 
     try {
-      const response = await axios.post('http://localhost:8000/user/student/createstudent', {
+      const response = await axios.post('https://vijay23055-1.onrender.com/user/student/createstudent', {
         username: formData.email, // You can also use another username field if desired
         password: formData.password,
         confirmPassword: formData.confirmPassword,

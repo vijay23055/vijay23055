@@ -19,7 +19,7 @@ const TakeExam = () => {
     setLoading(true);
     setFormSubmitted(true);
     try {
-      const response = await axios.post('http://localhost:8000/user/student/takeexam', { studentId, examId });
+      const response = await axios.post('https://vijay23055-1.onrender.com/user/student/takeexam', { studentId, examId });
       if (response.status === 200) {
         setExamTitle(response.data.examTitle);
         setQuestions(response.data.questions);

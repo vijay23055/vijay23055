@@ -24,7 +24,7 @@ function Login({ onLogin }) {  // Accept the onLogin prop here
 
     try {
       console.log("data");
-      const response = await axios.post('http://localhost:8000/user/student/loginstudent', {
+      const response = await axios.post('https://vijay23055-1.onrender.com/user/student/loginstudent', {
         email: formData.email,
         password: formData.password,
       });

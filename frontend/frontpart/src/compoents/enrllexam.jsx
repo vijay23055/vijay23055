@@ -20,7 +20,7 @@ const EnrollInExam = () => {
 
     try {
       // Making POST request to the backend API
-      const response = await axios.post('http://localhost:8000/user/student/enrollexam', payload);
+      const response = await axios.post('https://vijay23055-1.onrender.com/user/student/enrollexam', payload);
       
       if (response.status === 200) {
         setMessage(response.data.message);
