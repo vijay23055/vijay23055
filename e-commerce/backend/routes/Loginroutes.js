@@ -4,7 +4,7 @@ const router = Express.Router()
 
 router.post('/createuser',Login.createUser)
 router.post('/createadminuser',Login.createAdminUser)
-router.get('/loginuser',Login.loginUser)
+router.post('/loginuser',Login.loginUser)
 
 
 export default router

@@ -18,6 +18,7 @@ const createUser = async(req, res)=>
         const UserCollection = client.db(db_name).collection('User');
         
         const { userName, password,confirmPassword, email} = req.body;
+        // const { userName, password, email} = req.body;
         
         const hashedPassword = await auth.authentication(password)
     
